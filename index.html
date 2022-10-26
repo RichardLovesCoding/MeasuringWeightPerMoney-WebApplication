@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>MoneyXGrammy</title>
+  <link rel="stylesheet" href="Style/style.css" </head>
+
+<body>
+  <div id="container">
+    <h3>⚡リチャード⚡</h3>
+    <div class="container" id="topContainer">
+      <div class="title">Per 1 KG :</div>
+      <div class="inputContainer">
+        <span>₹</span>
+        <input onkeyup="initialWeight()" type="text" id="massPrice" placeholder="0.00" />
+      </div>
+    </div>
+    <div class="container">
+      <div class="title">You're Paying :</div>
+      <div class="inputContainer">
+        <span>₹</span>
+        <input onkeyup="calculateActualWeight()" type="text" id="yourPrice" placeholder="0.00" />
+      </div>
+    </div>
+    <div class="finalWeightContainer">
+      <div class="title">You will get:</div>
+      <div class="total" id="finalGmAmount">0.00gm</div>
+    </div>
+    <script src="Script/script.js"></script>
+</body>
+
+</html>
